@@ -1,0 +1,21 @@
+#rep{
+    margin: 10px;
+    font-family: sans-serif;
+
+}
+#rep h1{
+    text-transform: uppercase;
+    font-size: 35px;
+}
+#rep h1,
+#rep h2,
+#rep h4{
+    text-align: center;
+}
+.contact p{
+padding: 10px;
+color: #666;
+}
+.contact:not(:last-of-type){
+    border-bottom: 1px solid #000;
+}
