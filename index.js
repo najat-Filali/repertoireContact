@@ -32,8 +32,20 @@ document.querySelector('#rep').innerHTML += `
 `; 
 
 }
-createContact('Dupont', 'Claude', '04.33.25.55.25', 'claude@smail.com'); 
-createContact('Sanchez','MArie', '16.22.23.25.25', 'marie@vhqs.com' ); 
+
+document.forms.fac.addEventListener(
+    'submit', 
+    function (event){
+        event.preventDefault(); //annule comportement par defaut(appelreseau par ex)
+        createContact(
+            this.lastName.value,
+            this.firstName.value, 
+            this.phone.value,
+            this.email.value,
+        ); 
+        return false; // annule comportement par defaut
+    }); 
+ 
 
 
 
