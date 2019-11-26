@@ -28,9 +28,7 @@ document.querySelector('#rep').innerHTML += `
     <p>Lorem dolor sit amet consectetur adipisicing elit. Itaque numquam et molestias asperiores? Voluptatum modi aspernatur iste delectus temporibus suscipit harum sapiente ducimus, esse, similique pariatur totam a aliquam reicie
     </p>
 </div>
-
 `; 
-
 }
 
 document.forms.fac.addEventListener(
@@ -45,7 +43,20 @@ document.forms.fac.addEventListener(
         ); 
         return false; // annule comportement par defaut
     }); 
- 
 
+
+/* exemple 
+    //ajout element ds html ! += ajoute  = ecrase
+    document.body.innerHTML ='<button> TEST </button>';
+    //recuperation
+    const bt = document.querySelector('button');
+    //ajout du listenener
+    bt.addEventListener('click', test);//'evnement' et fonction qui n'est pas executee, pas les parentheses sinon s'execute tout de suite et non plus au click ici.C'est l'evenement qui execute la fonction
+    
+    function test(){
+        confirm('ok'); 
+    }
+ 
+*/
 
 
